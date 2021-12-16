@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{"HH:mm:ss,SSS"} [%10t] %5p [%25c{25}] %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.svaor.tutorial.yaml" level="DEBUG"/>
+
+	<root level="ERROR">
+		<appender-ref ref="stdout"/>
+	</root>
+</configuration>
